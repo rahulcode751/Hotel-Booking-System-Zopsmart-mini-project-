@@ -43,7 +43,7 @@ The Hotel Booking project, developed using the [Go](https://go.dev/) language an
 
 # Postman Documentation
 
-### Documentation link = [Postman Documentation click here](https://documenter.getpostman.com/view/21947736/2s9YkkgNpq )
+## Documentation link = [Postman Documentation click here](https://documenter.getpostman.com/view/21947736/2s9YkkgNpq )
 
 # UML Diagram 
 ### Sequence Diagram
@@ -62,6 +62,11 @@ The Hotel Booking project, developed using the [Go](https://go.dev/) language an
 ### UseCase Diagram
 ![UsecaseDiagram](https://github.com/rahulcode751/Gofr/assets/73958355/1bdfdf6b-06fb-4a7e-814b-c5c4c75711f2)
 #### The above diagram depicts the UseCase Diagram for a hotel booking system.
+```bash
+1. Here, our project has two actors: the receptionist and the customer.
+2. Receptionists have access to all the features, like adding, deleting, updating, and creating bookings.
+3. The customer has provided the details of the room after payment is done.
+```
 
 ### 🔗 Profile Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
