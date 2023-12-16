@@ -27,11 +27,17 @@ It's a simple API mini-project for Zopsmart that contains the CRUD (Get,Post,Upd
 #### To run this project, you will need to add the following environment variables to your .env file
 
 `APP_NAME`= zopsmart-mini-project
+
 `DB_HOST`= localhost
+
 `DB_PORT`= 3306
+
 `DB_USER`= your_sql_username
+
 `DB_PASSWORD`= your_sql_password
+
 `DB_NAME`= Database_name
+
 `DB_DIALECT`= mysql
 
 
