@@ -53,6 +53,7 @@ The Hotel Booking project, developed using the Go language and the Gofr framewor
 
 # Sequence Diagram
 
-![App Screenshot]("https://github.com/rahulcode751/Gofr/blob/main/Diagrams/SequenceDiagram.png")
+![SequenceDiagram](https://github.com/rahulcode751/Gofr/assets/73958355/2046553c-5425-4353-b81b-053e95c3db01)
+
 
 
