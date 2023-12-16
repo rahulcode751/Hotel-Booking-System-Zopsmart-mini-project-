@@ -1,6 +1,6 @@
 # Zopsmart Mini Project (Hotel Booking)
 
-It's a simple API mini-project for Zopsmart that contains the CRUD (Get,Post,Update,Delete) operation for hotel booking.
+The Hotel Booking project, developed using the Go language and the Gofr framework, operates as a comprehensive API for managing hotel room reservations. With a single model featuring fields such as ID, hotel name, customer name, date, price, room number, and customer contact number, the API facilitates essential CRUD operations necessary for efficient hotel booking management. This backend solution offers seamless integration for hotel systems, optimising the process of adding, retrieving, updating, and deleting booking entries.
 
 ## Setup
 
@@ -19,7 +19,7 @@ It's a simple API mini-project for Zopsmart that contains the CRUD (Get,Post,Upd
 #### Go to configs folder and create .env file
 ```bash
   cd configs
-  echo. > "filepath\.env"
+  echo. > "ConfigsFolderPath\.env"
 ```
 
 ## Environment Variables
