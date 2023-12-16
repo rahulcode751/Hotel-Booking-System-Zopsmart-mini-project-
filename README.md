@@ -4,7 +4,7 @@ The Hotel Booking project, developed using the Go language and the Gofr framewor
 
 ## Setup
 
-## Installation
+### Installation
 #### Clone Repository
 ```bash
   git clone https://github.com/rahulcode751/Gofr.git
@@ -51,6 +51,8 @@ The Hotel Booking project, developed using the Go language and the Gofr framewor
 
 #### Documentation link = [Postman Documentation click here](https://documenter.getpostman.com/view/21947736/2s9YkkgNpq )
 
+# Sequence Diagram
 
+![App Screenshot]("https://github.com/rahulcode751/Gofr/blob/main/Diagrams/SequenceDiagram.png")
 
 
