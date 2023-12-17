@@ -18,11 +18,11 @@ func main() {
 	handleData := handler.New(DStore)
 	// Setting Server PORT
 	app.Server.HTTP.Port = 8000
-	app.GET("/hotelbooking/{id}", handleData.GetByID)
-	app.GET("/hotelbooking", handleData.GetAllBookings)
-	app.POST("/hotelbooking", handleData.Create)
-	app.PUT("/hotelbooking/{id}", handleData.Update)
-	app.DELETE("/hotelbooking/{id}", handleData.Delete)
+	app.GET("/hotelbooking/detail/{id}", handleData.GetByID)
+	app.GET("/hotelbooking/details", handleData.GetAllBookings)
+	app.POST("/hotelbooking/add", handleData.Create)
+	app.PUT("/hotelbooking/update/{id}", handleData.Update)
+	app.DELETE("/hotelbooking/delete/{id}", handleData.Delete)
 	// Starting Server
 	app.Start()
 }

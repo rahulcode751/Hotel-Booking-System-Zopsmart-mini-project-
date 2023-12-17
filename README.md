@@ -61,6 +61,10 @@ The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) lan
   go mod tidy
   go run main.go
 ```
+#### For testing
+```bash
+  go test
+```
 
 ## **Postman API Collection Documentation**
 
@@ -70,18 +74,18 @@ The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) lan
 ### Endpoints Description
 #### Get Booking Details By ID
 ```bash
-  URL - http://localhost:8000/hotelbooking/:id
+  URL - http://localhost:8000/hotelbooking/detail/:id
   METHOD - GET
   Path Variables [id:1]
 ```
 #### Get All Booking Details
 ```bash
-  URL - http://localhost:8000/hotelbooking
+  URL - http://localhost:8000/hotelbooking/details
   METHOD - GET
 ```
 #### Add Booking Details To System
 ```bash
-  URL - http://localhost:8000/hotelbooking
+  URL - http://localhost:8000/hotelbooking/add
   METHOD - POST
   Body - (content-type = application/json)
   {
@@ -95,7 +99,7 @@ The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) lan
 ```
 #### Update Booking Entry Detail By ID
 ```bash
-  URL - http://localhost:8000/hotelbooking/:id
+  URL - http://localhost:8000/hotelbooking/update/:id
   METHOD - PUT
   Path Variables [id:1]
   Body - (content-type = application/json)
@@ -110,7 +114,7 @@ The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) lan
 ```
 #### Delete Booking Entry Detail By ID
 ```bash
-  URL - http://localhost:8000/hotelbooking/:id
+  URL - http://localhost:8000/hotelbooking/delete/:id
   METHOD - DELETE
   Path Variables [id:1]
 ```
