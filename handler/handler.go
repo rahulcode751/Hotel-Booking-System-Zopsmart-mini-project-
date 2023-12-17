@@ -38,7 +38,15 @@ func (h handler) GetByID(ctx *gofr.Context) (interface{}, error) {
 
 	return resp, nil
 }
-
+func (h handler) GetAllBookings(ctx *gofr.Context) (interface{}, error) {
+	resp, err := h.store.GetAllBookings(ctx)
+	if err != nil {
+		return nil, errors.EntityNotFound{
+			Entity: "bookings",
+		}
+	}
+	return resp, nil
+}
 func (h handler) Create(ctx *gofr.Context) (interface{}, error) {
 	var booking model.Booking
 

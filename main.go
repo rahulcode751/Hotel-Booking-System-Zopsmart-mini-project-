@@ -19,6 +19,7 @@ func main() {
 	// Setting Server PORT
 	app.Server.HTTP.Port = 8000
 	app.GET("/hotelbooking/{id}", handleData.GetByID)
+	app.GET("/hotelbooking", handleData.GetAllBookings)
 	app.POST("/hotelbooking", handleData.Create)
 	app.PUT("/hotelbooking/{id}", handleData.Update)
 	app.DELETE("/hotelbooking/{id}", handleData.Delete)

@@ -28,6 +28,25 @@ func (s *booking) GetByID(ctx *gofr.Context, id string) (*model.Booking, error) 
 		return &model.Booking{}, err
 	}
 }
+func (s *booking) GetAllBookings(ctx *gofr.Context) ([]model.Booking, error) {
+	var response []model.Booking
+
+	rows, err := ctx.DB().QueryContext(ctx, " SELECT id,hotelname,customername,date,price,customercontact,roomno FROM bookings")
+	// .Scan(&response.ID, &response.HotelName, &response.CustomerName, &response.Date, &response.Price, &response.CustomerContact, &response.RoomNo)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	for rows.Next() {
+		var resp model.Booking
+		err := rows.Scan(&resp.ID, &resp.HotelName, &resp.CustomerName, &resp.Date, &resp.Price, &resp.CustomerContact, &resp.RoomNo)
+		if err != nil {
+			return nil, err
+		}
+		response = append(response, resp)
+	}
+	return response, nil
+}
 
 func (s *booking) Create(ctx *gofr.Context, booking *model.Booking) (*model.Booking, error) {
 	var response model.Booking

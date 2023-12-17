@@ -5,6 +5,7 @@ The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) lan
 ## Functions :
 * **Add Booking Details**: This API is basically used for adding booking details, i.e., customer level details, date for booking, and price for rooms.
 * **Get Booking Details By ID**: This API is basically used for extracting the booking details of hotel rooms based on a unique ID issued for each booking.
+* **Get All Booking Details**: This API is basically used for extracting all booking details of hotel rooms.
 * **Update Booking Entry Detail By ID**: This API is basically used for updating the booking details, i.e., the customer-level details or the details related to room number, price, and date.
 * **Delete booking entry details. By ID**: This API is basically used to delete the booking details, or, in simple words, to say that the customer has checked out of the hotel.
 
@@ -43,8 +44,8 @@ The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) lan
 ```
 #### Create Database in mysql
 ```bash
-  > CREATE DATABASE Bookings;
-  > USE Bookings;
+  > CREATE DATABASE Bookings
+  > USE Bookings
   > CREATE TABLE bookings(
       id int AUTO_INCREMENT PRIMAY KEY,
       hotelname varchar(255),
@@ -53,7 +54,7 @@ The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) lan
       price int,
       customercontact varchar(10),
       roomno int
-    );
+    )
 ```
 #### Download and sync the required modules and start the project.
 ```bash
@@ -72,6 +73,11 @@ The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) lan
   URL - http://localhost:8000/hotelbooking/:id
   METHOD - GET
   Path Variables [id:1]
+```
+#### Get All Booking Details
+```bash
+  URL - http://localhost:8000/hotelbooking
+  METHOD - GET
 ```
 #### Add Booking Details To System
 ```bash
