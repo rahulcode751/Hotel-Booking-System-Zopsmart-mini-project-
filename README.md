@@ -44,8 +44,8 @@ The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) lan
 ```
 #### Create Database in mysql
 ```bash
-  > CREATE DATABASE Bookings
-  > USE Bookings
+  > CREATE DATABASE Bookings;
+  > USE Bookings;
   > CREATE TABLE bookings(
       id int AUTO_INCREMENT PRIMAY KEY,
       hotelname varchar(255),
@@ -54,7 +54,7 @@ The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) lan
       price int,
       customercontact varchar(10),
       roomno int
-    )
+    );
 ```
 #### Download and sync the required modules and start the project.
 ```bash
