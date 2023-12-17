@@ -19,6 +19,7 @@ func New(s datastore.Booking) handler {
 
 func (h handler) GetByID(ctx *gofr.Context) (interface{}, error) {
 	id := ctx.PathParam("id")
+	// if ID is not present in path variables
 	if id == "" {
 		return nil, errors.MissingParam{Param: []string{"id"}}
 	}
@@ -99,11 +100,12 @@ func (h handler) Delete(ctx *gofr.Context) (interface{}, error) {
 	return "Deleted successfully", nil
 }
 
+// Validating ID
 func validateID(id string) (int, error) {
+	// converting string id to integer
 	res, err := strconv.Atoi(id)
 	if err != nil {
 		return 0, err
 	}
-
 	return res, err
 }

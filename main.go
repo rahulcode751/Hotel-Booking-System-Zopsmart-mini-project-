@@ -8,7 +8,11 @@ import (
 )
 
 func main() {
-	// Project By Rahul bairagi(201B204) +91-6264959991 Hotel Booking System
+	/*
+		Project By Rahul Bairagi (201B204) JUET
+		+91-6264959991
+		Hotel Booking System
+	*/
 	app := gofr.New()
 	DStore := datastore.New()
 	handleData := handler.New(DStore)
