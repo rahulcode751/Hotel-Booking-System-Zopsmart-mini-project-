@@ -1,9 +1,10 @@
 # Zopsmart Mini Project (Hotel Booking)
+It was the first round of Zopsmart on-campus hiring, and though I was not selected in the very first round, which is the project review round, I don't know why they didn't select me, even though my project was much better than those who were shortlisted in the first round. But okay, sometimes things don't go as planned. It was not a good day for me, but that drive taught me a great lesson in life.
 
 The Hotel Booking project, developed using the [**GoLang**](https://go.dev/) language and the [**Gofr**](https://gofr.dev/) framework, operates as a comprehensive API for managing hotel room reservations. With a single model featuring fields such as ID, hotel name, customer name, date, price, room number, and customer contact number, the API facilitates essential CRUD operations necessary for efficient hotel booking management. This backend solution offers seamless integration for hotel systems, optimizing the process of adding, retrieving, updating, and deleting booking entries.
 
 ## Functions :
-* **Add Booking Details**: This API is basically used for adding booking details, i.e., customer level details, date for booking, and price for rooms.
+* **Add Booking Details**: This API is basically used for adding booking details, i.e., customer-level details, date for booking, and price for rooms.
 * **Get Booking Details By ID**: This API is basically used for extracting the booking details of hotel rooms based on a unique ID issued for each booking.
 * **Get All Booking Details**: This API is basically used for extracting all booking details of hotel rooms.
 * **Update Booking Entry Detail By ID**: This API is basically used for updating the booking details, i.e., the customer-level details or the details related to room number, price, and date.
